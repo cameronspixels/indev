@@ -12,14 +12,14 @@
     <meta property="og:title" content="Portfolio &amp; CV | Cameron Barnes" />
     <meta property="og:url" content="http://www.cameron.coffee/portfolio-cv.html" />
     <meta property="og:description" content="The portfolio &amp; curriculum vitae of front-end website developer Cameron Barnes." />
-    <meta property="og:image" content="http://www.cameron.coffee/img/bg-red.jpg" />
+    <meta property="og:image" content="/img/bg-red.jpg" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@cameronspixels">
     <meta name="twitter:creator" content="@cameronspixels">
     <meta name="twitter:url" content="https://cameronspixels.co.uk/portfolio-cv.html/">
     <meta name="twitter:title" content="Portfolio &amp; CV | Cameron Barnes">
     <meta name="twitter:description" content="The portfolio &amp; curriculum vitae of front-end website developer Cameron Barnes.">
-    <meta name="twitter:image" content="http://www.cameron.coffee/img/img/bg-red.jpg">
+    <meta name="twitter:image" content="/img/bg-red.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel="stylesheet">
     <script>
@@ -30,11 +30,21 @@
       ga('create', 'UA-86304133-1', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="scripty.js"></script>
+    
+    <!-- Animation scritps -->
+    <script defer async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script defer async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script defer async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script defer async type="text/javascript" src="animate.js"></script>
+
+    <!-- Regular scritps -->
+    <script defer async type="text/javascript" src="scripty.min.js"></script>
+
   </head>
   <body id="top">
-  	<header class="blue-green" id="openMenu">
+    <div class="overlay red-blue"></div>
+    <div class="blue-green">
+  	<header id="header">
       <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
   		<nav>
         <a href="#" class="hamburger open" id="hamburgerOpen" title="Open mobile menu"><span class="block-1"></span><span class="block-2"></span><span class="block-3"></span></a>
@@ -56,7 +66,8 @@
         <title id="arrow">Arrow To Content</title>
         <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/Arrow-To-Content.svg" x="0" y="0" width="100%" height="100%"></image>
       </svg>
-  	</header>
+    </header>
+  </div>
 
 
   	<main id="content">
@@ -138,10 +149,6 @@
           <li>French</li>
         </ul>
       </div>
-
-
-
-
 
 
   	</main>
